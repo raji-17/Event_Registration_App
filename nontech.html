@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Tech Events - Inter College Fest 2024</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Non-Tech Events</h1>
+     <a href="index.html">
+    <button class="back-home-btn">Back to Home</button>
+  </a>
+  
+  </header>
+  <main>
+    <ul>
+      <!-- Non-Tech Event: Mr. Detective -->
+<li>
+    <h3>Mr. Detective</h3>
+    <p>Put on your detective hat and solve the mystery.</p>
+    <button onclick="toggleRegistrationForm('mrdetective')">Register</button>
+  
+    <!-- Registration Form for Mr. Detective -->
+    <div class="registration-form form-mrdetective" style="display: none;">
+      <h3>Register for Mr. Detective</h3>
+      <form id="mrdetectiveForm" onsubmit="submitRegistrationForm(event, 'Mr. Detective')">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </li>
+
+  <!-- Non-Tech Event: Treasure Hunt -->
+<li>
+    <h3>Treasure Hunt</h3>
+    <p>Join the adventure and solve puzzles to find the hidden treasure.</p>
+    <button onclick="toggleRegistrationForm('treasurehunt')">Register</button>
+  
+    <!-- Registration Form for Treasure Hunt -->
+    <div class="registration-form form-treasurehunt" style="display: none;">
+      <h3>Register for Treasure Hunt</h3>
+      <form id="treasurehuntForm" onsubmit="submitRegistrationForm(event, 'Treasure Hunt')">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </li>  
+  
+  <!-- Non-Tech Event: Unplugged -->
+  <li>
+    <h3>Unplugged</h3>
+    <p>Show off your talent and creativity without any technology.</p>
+    <button onclick="toggleRegistrationForm('unplugged')">Register</button>
+  
+    <!-- Registration Form for Unplugged -->
+    <div class="registration-form form-unplugged" style="display: none;">
+      <h3>Register for Unplugged</h3>
+      <form id="unpluggedForm" onsubmit="submitRegistrationForm(event, 'Unplugged')">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required><br><br>
+        <label for="college">College:</label>
+        <input type="text" id="college" name="college" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </li>
+    </ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

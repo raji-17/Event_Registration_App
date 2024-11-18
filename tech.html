@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Events - Inter College Fest 2024</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tech Events</h1>
+    <a href="index.html">
+        <button class="back-home-btn">Back to Home</button>
+      </a>
+  </header>
+  <main>
+    <ul>
+      <!-- Paper Presentation -->
+      <li>
+        <h3>Paper Presentation</h3>
+        <p>Present your innovative ideas and research findings.</p>
+        <button onclick="toggleRegistrationForm('paper')">Register</button>
+      
+        <!-- Registration Form for Paper Presentation -->
+        <div class="registration-form form-paper" style="display: none;">
+          <h3>Register for Paper Presentation</h3>
+          <form id="paperForm" onsubmit="submitRegistrationForm(event, 'Paper Presentation')">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </li>
+      
+      <!-- Tech Quiz Event -->
+      <li>
+        <h3>Tech Quiz</h3>
+        <p>Test your knowledge in technology and win exciting prizes.</p>
+        <button onclick="toggleRegistrationForm('techquiz')">Register</button>
+      
+        <!-- Registration Form for Tech Quiz -->
+        <div class="registration-form form-techquiz" style="display: none;">
+          <h3>Register for Tech Quiz</h3>
+          <form id="techquizForm" onsubmit="submitRegistrationForm(event, 'Tech Quiz')">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </li>
+      
+      <!-- Code Master Event -->
+      <li>
+        <h3>Code Master</h3>
+        <p>Show your coding skills and become the Code Master.</p>
+        <button onclick="toggleRegistrationForm('codemaster')">Register</button>
+      
+        <!-- Registration Form for Code Master -->
+        <div class="registration-form form-codemaster" style="display: none;">
+          <h3>Register for Code Master</h3>
+          <form id="codemasterForm" onsubmit="submitRegistrationForm(event, 'Code Master')">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </li>
+      
+      <!-- Circuit Debugging Event -->
+      <li>
+        <h3>Circuit Debugging</h3>
+        <p>Find and fix faults in circuits to demonstrate your problem-solving skills.</p>
+        <button onclick="toggleRegistrationForm('circuitdebugging')">Register</button>
+      
+        <!-- Registration Form for Circuit Debugging -->
+        <div class="registration-form form-circuitdebugging" style="display: none;">
+          <h3>Register for Circuit Debugging</h3>
+          <form id="circuitdebuggingForm" onsubmit="submitRegistrationForm(event, 'Circuit Debugging')">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="mobile">Mobile:</label>
+            <input type="text" id="mobile" name="mobile" required><br><br>
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
